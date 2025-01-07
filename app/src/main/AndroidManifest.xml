@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+<!-- queries를 추가하지 않았을 땐 론처 가능한 앱이 3개만 나왔는데 추가하니깐 전부다 나옴-->
+<!-- 안드로이드 11부터 태그를 추가해서 사용하도록 제한을 했다고 함. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
